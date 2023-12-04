@@ -1,0 +1,20 @@
+{
+  "name": "mansour-akhavan",
+  "version": "1.0.0",
+  "description": "A website for Mr.Akhavan's business",
+  "default": "index.html",
+  "scripts": {
+    "cleanup": "rd /s /q .parcel-cache dist",
+    "start": "npm run cleanup && parcel index.html --port 5500",
+    "build": "parcel build index.html --public-url ./",
+    "deploy": "npm run cleanup && npm run build && gh-pages -d dist"
+  },
+  "author": "Yahya Kamaneh",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3"
+  }
+}

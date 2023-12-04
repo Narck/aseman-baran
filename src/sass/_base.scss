@@ -1,0 +1,72 @@
+$color-primary-light-90: #eaebf5;
+$color-primary-light-80: #d5d7eb;
+$color-primary-light-70: #c0c2e1;
+$color-primary-light-60: #abaed7;
+$color-primary-light-50: #969ace;
+$color-primary-light-40: #8086c4;
+$color-primary-light-30: #6b72ba;
+$color-primary-light-20: #565db0;
+$color-primary-light-10: #4149a6;
+$color-primary: #2c359c;
+$color-primary-dark-10: #28308c;
+$color-primary-dark-20: #232a7d;
+$color-primary-dark-30: #1f256d;
+$color-primary-dark-40: #1a205e;
+$color-primary-dark-50: #161b4e;
+$color-primary-dark-60: #12153e;
+$color-primary-dark-70: #0d102f;
+$color-primary-dark-80: #090b1f;
+$color-primary-dark-90: #040510;
+
+$color-secondary-light-90: #fcf3eb;
+$color-secondary-light-80: #fae6d8;
+$color-secondary-light-70: #f7dac4;
+$color-secondary-light-60: #f4cdb1;
+$color-secondary-light-50: #f2c19d;
+$color-secondary-light-40: #efb489;
+$color-secondary-light-30: #eca876;
+$color-secondary-light-20: #e99b62;
+$color-secondary-light-10: #e78f4f;
+$color-secondary: #e4823b;
+$color-secondary-dark-10: #cd7535;
+$color-secondary-dark-20: #b6682f;
+$color-secondary-dark-30: #a05b29;
+$color-secondary-dark-40: #894e23;
+$color-secondary-dark-50: #72411e;
+$color-secondary-dark-60: #5b3418;
+$color-secondary-dark-70: #442712;
+$color-secondary-dark-80: #2e1a0c;
+$color-secondary-dark-90: #170d06;
+
+$color-white: #fff;
+$color-gray-10: #f8f9fa;
+$color-gray-20: #f1f3f5;
+$color-gray-30: #e9ecef;
+$color-gray-40: #dee2e6;
+$color-gray-50: #ced4da;
+$color-gray-60: #adb5bd;
+$color-gray-70: #868e96;
+$color-gray-80: #495057;
+$color-gray-90: #343a40;
+$color-gray-90: #212529;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IRANYekanX", Tahoma, sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  direction: rtl;
+  color: $color-primary-light-80;
+}
