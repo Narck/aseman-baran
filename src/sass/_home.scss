@@ -1,1 +1,7 @@
 @use "base";
+
+.section-hero {
+  grid-column: full-start / full-end;
+  height: 100svh;
+  position: relative;
+}

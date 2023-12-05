@@ -68,5 +68,10 @@ body {
   font-weight: normal;
   line-height: 1.6;
   direction: rtl;
-  color: $color-primary-light-80;
+  color: $color-primary-dark-80;
+  overflow-x: hidden;
+}
+
+.exclude {
+  color: $color-primary;
 }
