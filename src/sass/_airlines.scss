@@ -1,0 +1,15 @@
+@use "base";
+
+.airlines {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  &__image {
+    filter: brightness(0);
+    opacity: 50%;
+    height: 6rem;
+  }
+}
