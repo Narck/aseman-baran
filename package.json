@@ -9,9 +9,11 @@
     "build": "parcel build index.html --public-url ./",
     "deploy": "npm run cleanup && npm run build && gh-pages -d dist"
   },
+  "homepage": "https://narck.github.io/aseman-baran",
   "author": "Yahya Kamaneh",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^6.1.0",
     "parcel": "^2.10.3"
   },
   "devDependencies": {
