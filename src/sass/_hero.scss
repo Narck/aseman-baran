@@ -50,7 +50,7 @@
   }
 
   &__svg {
-    bottom: 0;
+    bottom: -1px;
     fill: white;
     left: 0;
     line-height: 0;
@@ -81,13 +81,13 @@
 }
 
 .airplane {
-  animation: moveLeft 15s linear infinite both;
+  animation: moveLeft 15s linear infinite;
   height: 8rem;
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
   z-index: 10;
-
+  backface-visibility: hidden;
   &__image {
     display: block;
     height: 100%;
@@ -106,7 +106,7 @@
   }
 
   100% {
-    right: 100%;
+    right: calc(100% + 50rem);
     transform: translateY(-50%);
   }
 }
