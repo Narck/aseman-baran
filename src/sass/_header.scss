@@ -1,0 +1,51 @@
+@use "base";
+
+.header {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  font-size: 1.8rem;
+  grid-column: full-start/full-end;
+  height: 10rem;
+  justify-content: space-between;
+  left: 0;
+  padding: 2rem 4rem;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  &__link {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    gap: 1rem;
+    text-decoration: none;
+
+    &:visited,
+    &:link {
+      color: base.$color-primary-dark-10;
+    }
+  }
+
+  &__logo {
+    display: block;
+    height: 8rem;
+  }
+
+  &__nav {
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: base.$color-gray-90;
+    text-decoration: none;
+  }
+}
