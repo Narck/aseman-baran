@@ -1,67 +1,94 @@
 <!DOCTYPE html>
-<html lang = "fa">
+<html lang="fa">
   <head>
-    <meta charset = "UTF-8" />
-    <meta content = "width=device-width, initial-scale=1.0" name = "viewport" />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>
       خدمات ارسال هوایی بار آسمان باران - ارائه خدمات متنوع ارسال هوایی بار -
       فریت بار و کارگو در شیراز
-    </title>
-    <link href = "./assets/apple-touch-icon-6dpLTuga.png" rel = "apple-touch-icon" sizes = "180x180" />
-    <link href = "./assets/favicon-32x32-Bn7k5Btv.png" rel = "icon" sizes = "32x32" type = "image/png" />
-    <link href = "./assets/favicon-16x16-NDerasJO.png" rel = "icon" sizes = "16x16" type = "image/png" />
-    <link href = "./assets/site-cBxXiAWk.webmanifest" rel = "manifest" />
+    </title>
+    <link href="./assets/apple-touch-icon-6dpLTuga.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="./assets/favicon-32x32-Bn7k5Btv.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="./assets/favicon-16x16-NDerasJO.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="./assets/site-cBxXiAWk.webmanifest" rel="manifest" />
     <link
-        href = "https://static.neshan.org/sdk/leaflet/v1.9.4/neshan-sdk/v1.0.8/index.css"
-        rel = "stylesheet"
+      href="https://static.neshan.org/sdk/leaflet/v1.9.4/neshan-sdk/v1.0.8/index.css"
+      rel="stylesheet"
     />
     <script
-        defer
-        src = "https://static.neshan.org/sdk/leaflet/v1.9.4/neshan-sdk/v1.0.8/index.js"
+      defer
+      src="https://static.neshan.org/sdk/leaflet/v1.9.4/neshan-sdk/v1.0.8/index.js"
     ></script>
     <!--    <link rel="stylesheet" href="https://static.neshan.org/sdk/openlayers/v8.1.0/neshan-sdk/v1.0.5/index.css" />-->
     <!--    <script src="https://static.neshan.org/sdk/openlayers/v8.1.0/neshan-sdk/v1.0.5/index.js" defer></script>-->
-    <script type="module" crossorigin src="./assets/index-xmlgS-iS.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Ga1y3bIU.css">
+    <script type="module" crossorigin src="./assets/index-2FDPaKIP.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-PObDewu5.css">
   </head>
-  <body class = "container">
-    <header class = "header">
-      <div class = "container">
-        <div class = "header__wrapper">
-          <a class = "header__logo-box" href = "#">
+  <body class="container">
+    <div class="overlay">
+      <div class="overlay__message-box">
+        <div class="overlay__svg-box">
+          <svg
+            baseProfile="tiny"
+            class="loader"
+            version="1.2"
+            viewBox="0 0 200 200"
+            x="0"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            y="0"
+          >
+            <path
+              class="loaderreverse"
+              d="M200 100c0-30.3-13.5-57.5-34.8-75.8 -4.8-4.1-12.2-3-15.8 2.3v0c-3 4.5-2.4 10.7 1.8 14.2 16.6 14.4 27.1 35.6 27.1 59.3s-10.5 44.9-27.1 59.3c-4.1 3.6-4.8 9.7-1.8 14.2v0c3.6 5.3 11 6.4 15.8 2.3C186.5 157.5 200 130.3 200 100z"
+            />
+            <path
+              d="M156.7 100c0-14.9-5.8-28.5-15.2-38.6 -4.6-4.9-12.6-4.1-16.3 1.4l-0.4 0.6c-2.8 4.1-2.2 9.5 1.2 13.2 5.7 6.2 9.1 14.4 9.1 23.5 0 9-3.4 17.3-9.1 23.5 -3.3 3.7-3.9 9-1.2 13.2l0.4 0.6c3.7 5.6 11.7 6.3 16.3 1.4C150.9 128.5 156.7 114.9 156.7 100z"
+            />
+          </svg>
+        </div>
+        <p class="overlay__message">
+          در حال ارسال پیام. لطفا منتظر بمانید
+        </p>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo-box" href="#">
             <img
-                alt = "لوگوی شرکت فریت بار آسمان باران شیراز"
-                class = "header__logo"
-                src = "./assets/logo-new-DTSl5irv.png"
+              alt="لوگوی شرکت فریت بار آسمان باران شیراز"
+              class="header__logo"
+              src="./assets/logo-new-DTSl5irv.png"
             />
           </a>
-          <nav class = "header__nav">
-            <svg class = "nav__pointer">
-              <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-arrow_drop_up"></use>
+          <nav class="header__nav">
+            <svg class="nav__pointer">
+              <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-arrow_drop_up"></use>
             </svg>
-            <ul class = "nav__list">
-              <li class = "nav__item">
-                <a class = "nav__link" href = "#">خانه</a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">خانه</a>
               </li>
-              <li class = "nav__item">
-                <a class = "nav__link" href = "#">خدمات</a>
-                <svg class = "nav__arrow">
+              <li class="nav__item">
+                <a class="nav__link" href="#">خدمات</a>
+                <svg class="nav__arrow">
                   <use
-                      xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-keyboard_arrow_down"
+                    xlink:href="./assets/sprite-gsSj8QpA.svg#icon-keyboard_arrow_down"
                   ></use>
                 </svg>
               </li>
-              <li class = "nav__item">
-                <a class = "nav__link" href = "#">وبلاگ</a>
+              <li class="nav__item">
+                <a class="nav__link" href="#">وبلاگ</a>
               </li>
-              <li class = "nav__item">
-                <a class = "nav__link" href = "#">پیگیری محموله</a>
+              <li class="nav__item">
+                <a class="nav__link" href="#">پیگیری محموله</a>
               </li>
-              <li class = "nav__item">
-                <a class = "nav__link" href = "#">درباره ما</a>
+              <li class="nav__item">
+                <a class="nav__link" href="#">درباره ما</a>
               </li>
-              <li class = "nav__item">
-                <a class = "nav__link" href = "#">تماس با ما</a>
+              <li class="nav__item">
+                <a class="nav__link" href="#">تماس با ما</a>
               </li>
             </ul>
             <!--                <svg-->
@@ -75,38 +102,38 @@
             <!--                  ></path>-->
             <!--                </svg>-->
           </nav>
-          <button aria-label = "Main Menu" class = "menu nav__btn">
-            <svg viewBox = "0 0 100 100">
+          <button aria-label="Main Menu" class="menu nav__btn">
+            <svg viewBox="0 0 100 100">
               <path
-                  class = "nav__line nav__line--1"
-                  d = "M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                class="nav__line nav__line--1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
               />
-              <path class = "nav__line nav__line--2" d = "M 20,50 H 80" />
+              <path class="nav__line nav__line--2" d="M 20,50 H 80" />
               <path
-                  class = "nav__line nav__line--3"
-                  d = "M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                class="nav__line nav__line--3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
               />
             </svg>
           </button>
         </div>
       </div>
     </header>
-    <aside class = "mobile-nav">
-      <div class = "background"></div>
-      <nav class = "nav">
-        <ul class = "nav__list">
-          <li class = "nav__item">
-            <a class = "nav__link" href = "#">خانه</a>
+    <aside class="mobile-nav">
+      <div class="background"></div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">خانه</a>
           </li>
-          <li class = "nav__item">
-            <a class = "nav__link" href = "#">پیگیری محموله</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">پیگیری محموله</a>
           </li>
-          <li class = "nav__item">
-            <div class = "nav__title">
-              <a class = "nav__link" href = "#">خدمات</a>
-              <svg class = "nav__arrow">
+          <li class="nav__item">
+            <div class="nav__title">
+              <a class="nav__link" href="#">خدمات</a>
+              <svg class="nav__arrow">
                 <use
-                    xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-keyboard_arrow_down"
+                  xlink:href="./assets/sprite-gsSj8QpA.svg#icon-keyboard_arrow_down"
                 ></use>
               </svg>
             </div>
@@ -124,18 +151,18 @@
               <li>ایتالیا</li>
             </ul>
           </li>
-          <li class = "nav__item">
-            <a class = "nav__link" href = "#">وبلاگ</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">وبلاگ</a>
           </li>
-          <li class = "nav__item">
-            <a class = "nav__link" href = "#">درباره ما</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">درباره ما</a>
           </li>
-          <li class = "nav__item">
-            <div class = "nav__title">
-              <a class = "nav__link" href = "#">خدمات ۲</a>
-              <svg class = "nav__arrow">
+          <li class="nav__item">
+            <div class="nav__title">
+              <a class="nav__link" href="#">خدمات ۲</a>
+              <svg class="nav__arrow">
                 <use
-                    xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-keyboard_arrow_down"
+                  xlink:href="./assets/sprite-gsSj8QpA.svg#icon-keyboard_arrow_down"
                 ></use>
               </svg>
             </div>
@@ -153,506 +180,461 @@
               <li>ایتالیاایتالیاایتالیاایتالیاایتالیاایتالیاایتالیا</li>
             </ul>
           </li>
-          <li class = "nav__item">
-            <a class = "nav__link" href = "#">تماس با ما</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">تماس با ما</a>
           </li>
         </ul>
       </nav>
     </aside>
-    <section class = "section-hero">
-      <div class = "container">
-        <div class = "hero">
-          <div class = "hero__text-box">
-            <div class = "hero__text">
-              <h1 class = "heading-primary hero__header">
-                <span class = "reveal">سریع و آسان با آسمان باران</span>
+    <section class="section-hero">
+      <div class="container">
+        <div class="hero">
+          <div class="hero__text-box">
+            <div class="hero__text">
+              <h1 class="heading-primary hero__header">
+                <span class="reveal">سریع و آسان با آسمان باران</span>
               </h1>
-              <p class = "hero__description">
+              <p class="hero__description">
                 آسمان باران راهکاری امن و آسان برای فریت بار به اقصی نقاط جهان
               </p>
-              <button class = "btn btn--outline">اطلاعات بیشتر</button>
-              <button class = "btn btn--main margin-right-sm">
+              <button class="btn btn--outline">اطلاعات بیشتر</button>
+              <button class="btn btn--main margin-right-sm">
                 مشاوره رایگان
               </button>
             </div>
-            <div class = "hero__text">
-              <h1 class = "heading-primary hero__header">
-                <span class = "reveal"
-                >فریت بار مسافری برای مسافران و مهاجرین</span
+            <div class="hero__text">
+              <h1 class="heading-primary hero__header">
+                <span class="reveal"
+                  >فریت بار مسافری برای مسافران و مهاجرین</span
                 >
               </h1>
-              <p class = "hero__description">
+              <p class="hero__description">
                 دیگر نگران هزینه اضافه بار نباشید! با آسمان باران به صرفه و
                 بهینه بار خود را به مقصد برسانید
               </p>
-              <button class = "btn btn--outline">اطلاعات بیشتر</button>
-              <button class = "btn btn--main margin-right-sm">
+              <button class="btn btn--outline">اطلاعات بیشتر</button>
+              <button class="btn btn--main margin-right-sm">
                 مشاوره رایگان
               </button>
             </div>
-            <div class = "hero__text">
-              <h1 class = "heading-primary hero__header">
-                <span class = "reveal">راه حلی هوشمندانه برای تجارت</span>
+            <div class="hero__text">
+              <h1 class="heading-primary hero__header">
+                <span class="reveal">راه حلی هوشمندانه برای تجارت</span>
               </h1>
-              <p class = "hero__description">
+              <p class="hero__description">
                 ارسال و صادرات انواع محصولات و کالاها با ناوگان هوایی
                 ایرلاین‌های معتبر بین‌المللی
               </p>
-              <button class = "btn btn--outline">اطلاعات بیشتر</button>
-              <button class = "btn btn--main margin-right-sm">
+              <button class="btn btn--outline">اطلاعات بیشتر</button>
+              <button class="btn btn--main margin-right-sm">
                 مشاوره رایگان
               </button>
             </div>
           </div>
-          <div class = "hero__image-box">
-            <picture class = "hero__picture"
-            ><img
-                alt = ""
+          <div class="hero__image-box">
+            <picture class="hero__picture"
+              ><img
+                alt=""
+                class="hero__image show"
                 src="./assets/airplane-aircraft-travel-trip (1)-TlsPoSbY.webp"
-                class = "hero__image show"
             /></picture>
-            <picture class = "hero__picture"
-            ><img
-                alt = ""
-                class = "hero__image"
-                src = "./assets/happy-deliverer-carrying-packages-while-making-home-delivery-his-customer3-jmiUjAF9.webp"
+            <picture class="hero__picture"
+              ><img
+                alt=""
+                class="hero__image"
+                src="./assets/happy-deliverer-carrying-packages-while-making-home-delivery-his-customer3-jmiUjAF9.webp"
             /></picture>
-            <picture class = "hero__picture"
-            ><img
-                alt = ""
-                class = "hero__image"
-                src = "./assets/large-truck-delivers-goods-boxes-open-hold-cargo-plane_124507-44692-HXF_2q6H.webp"
+            <picture class="hero__picture"
+              ><img
+                alt=""
+                class="hero__image"
+                src="./assets/large-truck-delivers-goods-boxes-open-hold-cargo-plane_124507-44692-HXF_2q6H.webp"
             /></picture>
           </div>
         </div>
-        <div class = "hero__svg-box">
+        <div class="hero__svg-box">
           <svg
-              class = "hero__svg"
-              data-name = "Layer 1"
-              preserveAspectRatio = "none"
-              viewBox = "0 0 1200 120"
-              xmlns = "http://www.w3.org/2000/svg"
+            class="hero__svg"
+            data-name="Layer 1"
+            preserveAspectRatio="none"
+            viewBox="0 0 1200 120"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-                d = "M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+              d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
             ></path>
           </svg>
         </div>
-        <!--          <div class = "hero__svg-box hero__svg-box&#45;&#45;bottom">-->
-        <!--&lt;!&ndash;            <svg viewBox="0 0 1200 794" fill="none" xmlns="http://www.w3.org/2000/svg">&ndash;&gt;-->
-        <!--&lt;!&ndash;              <path d="M600 69.8323C268.63 69.8323 0 38.5686 0 0V74.6161H1200V0C1200 38.5686 931.37 69.8323 600 69.8323Z" fill="white"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;              <path d="M0 787V74.5031L1200 70V787H0Z" fill="white"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;            </svg>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;            <svg viewBox="0 0 1200 1080" fill="none" xmlns="http://www.w3.org/2000/svg">&ndash;&gt;-->
-        <!--&lt;!&ndash;                <path d="M599.69 89.854C267.939 89.854 -1 47.329 -1 -5.13196V96.361H1200.38V-5.13196C1200.38 47.329 931.441 89.854 599.69 89.854Z" fill="white"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;                <path d="M-1 1086V96.2554L1200 90V1086H-1Z" fill="white"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;            </svg>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;            <svg viewBox="0 0 1200 2048" fill="none" xmlns="http://www.w3.org/2000/svg">&ndash;&gt;-->
-        <!--&lt;!&ndash;                <path d="M0 2032V102L1200 102V2032H0Z" fill="white"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;                <path d="M600 100.07C268.63 100.07 0 52.82 0 -5.46997V107.3H1200V-5.46997C1200 52.82 931.37 100.07 600 100.07Z" fill="white"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;            </svg>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;            <svg data-name = "Layer 1" preserveAspectRatio = "none" viewBox = "0 0 1200 120"&ndash;&gt;-->
-        <!--&lt;!&ndash;                 xmlns = "http://www.w3.org/2000/svg">&ndash;&gt;-->
-        <!--&lt;!&ndash;              <path class = "shape-fill"&ndash;&gt;-->
-        <!--&lt;!&ndash;                    d = "M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"></path>&ndash;&gt;-->
-        <!--&lt;!&ndash;            </svg>&ndash;&gt;-->
-        <!--&lt;!&ndash;            <svg data-name = "Layer 1" preserveAspectRatio = "none" viewBox = "0 0 1200 120"&ndash;&gt;-->
-        <!--&lt;!&ndash;                 xmlns = "http://www.w3.org/2000/svg">&ndash;&gt;-->
-        <!--&lt;!&ndash;              <path class = "shape-fill"&ndash;&gt;-->
-        <!--&lt;!&ndash;                    d = "M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"></path>&ndash;&gt;-->
-        <!--&lt;!&ndash;            </svg>&ndash;&gt;-->
-        <!--            &lt;!&ndash;                      <svg width="1200" height="795" viewBox="0 0 1200 795" fill="none" xmlns="http://www.w3.org/2000/svg">&ndash;&gt;-->
-        <!--            &lt;!&ndash;                        <g clip-path="url(#clip0_0_1)">&ndash;&gt;-->
-        <!--            &lt;!&ndash;                          <path d="M600.61 67.254C269.24 67.254 0.609985 35.9902 0.609985 -2.57831V72.0378H1200.61V-2.57831C1200.61 35.9902 931.98 67.254 600.61 67.254Z" fill="white"/>&ndash;&gt;-->
-        <!--            &lt;!&ndash;                        </g>&ndash;&gt;-->
-        <!--            &lt;!&ndash;                        <rect x="1" y="72" width="1199" height="723" fill="white"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;            </svg>&ndash;&gt;-->
-
-        <!--            &lt;!&ndash;            <svg&ndash;&gt;-->
-        <!--            &lt;!&ndash;              class="hero__svg"&ndash;&gt;-->
-        <!--            &lt;!&ndash;              data-name="Layer 1"&ndash;&gt;-->
-        <!--            &lt;!&ndash;              preserveAspectRatio="none"&ndash;&gt;-->
-        <!--            &lt;!&ndash;              viewBox="0 0 1200 120"&ndash;&gt;-->
-        <!--            &lt;!&ndash;              xmlns="http://www.w3.org/2000/svg"&ndash;&gt;-->
-        <!--            &lt;!&ndash;            >&ndash;&gt;-->
-        <!--            &lt;!&ndash;              <path&ndash;&gt;-->
-        <!--            &lt;!&ndash;                d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"&ndash;&gt;-->
-        <!--            &lt;!&ndash;              ></path>&ndash;&gt;-->
-        <!--            &lt;!&ndash;            </svg>&ndash;&gt;-->
-        <!--          </div>-->
       </div>
     </section>
-    <section class = "section-airlines logos">
-      <div class = "airlines">
-        <h3 class = "airlines__heading">
+    <section class="section-airlines logos">
+      <div class="airlines">
+        <h3 class="airlines__heading">
           همکاری با ۱۴ ایرلاین معتبر داخلی و خارجی
         </h3>
-        <div class = "airlines__group">
-          <div class = "airlines__row airlines__row--first logos-slide">
+        <div class="airlines__group">
+          <div class="airlines__row airlines__row--first logos-slide">
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/air-arabia-logo-wvmkftu1.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/air-arabia-logo-wvmkftu1.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/aseman-airline-logo-Anba0cqf.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/aseman-airline-logo-Anba0cqf.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/british-airways-logo-HpKu77tx.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/british-airways-logo-HpKu77tx.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/fly-emirates-logo-lTwhM8j-.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/fly-emirates-logo-lTwhM8j-.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/fly-dubai-logo-pRN9XMkI.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/fly-dubai-logo-pRN9XMkI.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/iran-air-logo-1t5AS5jQ.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/iran-air-logo-1t5AS5jQ.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/mahan-air-logo-IhKOWCpa.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/mahan-air-logo-IhKOWCpa.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/jazeera-airways-logo-YqTOwKAo.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/jazeera-airways-logo-YqTOwKAo.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/kuwait-airways-logo-Pt38vG1E.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/kuwait-airways-logo-Pt38vG1E.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/oman-air-logo-ThztW5Ki.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/oman-air-logo-ThztW5Ki.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/qatar-airways-logo-9b32UAae.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/qatar-airways-logo-9b32UAae.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/lufthansa-logo-9ffPg0Hl.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/lufthansa-logo-9ffPg0Hl.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/salam-air-logo-l6vfE_nq.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/salam-air-logo-l6vfE_nq.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/turkish-airline-logo-fvuNX9kC.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/turkish-airline-logo-fvuNX9kC.png"
             />
           </div>
-          <div class = "airlines__row airlines__row--second logos-slide">
+          <div class="airlines__row airlines__row--second logos-slide">
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/air-arabia-logo-wvmkftu1.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/air-arabia-logo-wvmkftu1.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/aseman-airline-logo-Anba0cqf.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/aseman-airline-logo-Anba0cqf.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/british-airways-logo-HpKu77tx.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/british-airways-logo-HpKu77tx.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/fly-emirates-logo-lTwhM8j-.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/fly-emirates-logo-lTwhM8j-.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/fly-dubai-logo-pRN9XMkI.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/fly-dubai-logo-pRN9XMkI.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/iran-air-logo-1t5AS5jQ.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/iran-air-logo-1t5AS5jQ.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/mahan-air-logo-IhKOWCpa.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/mahan-air-logo-IhKOWCpa.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/jazeera-airways-logo-YqTOwKAo.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/jazeera-airways-logo-YqTOwKAo.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/kuwait-airways-logo-Pt38vG1E.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/kuwait-airways-logo-Pt38vG1E.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/oman-air-logo-ThztW5Ki.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/oman-air-logo-ThztW5Ki.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/qatar-airways-logo-9b32UAae.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/qatar-airways-logo-9b32UAae.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/lufthansa-logo-9ffPg0Hl.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/lufthansa-logo-9ffPg0Hl.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/salam-air-logo-l6vfE_nq.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/salam-air-logo-l6vfE_nq.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/turkish-airline-logo-fvuNX9kC.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/turkish-airline-logo-fvuNX9kC.png"
             />
           </div>
         </div>
-        <div class = "airlines__group">
-          <div class = "airlines__row airlines__row--first logos-slide">
+        <div class="airlines__group">
+          <div class="airlines__row airlines__row--first logos-slide">
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/salam-air-logo-l6vfE_nq.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/salam-air-logo-l6vfE_nq.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/british-airways-logo-HpKu77tx.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/british-airways-logo-HpKu77tx.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/air-arabia-logo-wvmkftu1.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/air-arabia-logo-wvmkftu1.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/fly-emirates-logo-lTwhM8j-.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/fly-emirates-logo-lTwhM8j-.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/fly-dubai-logo-pRN9XMkI.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/fly-dubai-logo-pRN9XMkI.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/aseman-airline-logo-Anba0cqf.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/aseman-airline-logo-Anba0cqf.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/iran-air-logo-1t5AS5jQ.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/iran-air-logo-1t5AS5jQ.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/mahan-air-logo-IhKOWCpa.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/mahan-air-logo-IhKOWCpa.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/jazeera-airways-logo-YqTOwKAo.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/jazeera-airways-logo-YqTOwKAo.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/kuwait-airways-logo-Pt38vG1E.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/kuwait-airways-logo-Pt38vG1E.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/oman-air-logo-ThztW5Ki.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/oman-air-logo-ThztW5Ki.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/turkish-airline-logo-fvuNX9kC.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/turkish-airline-logo-fvuNX9kC.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/lufthansa-logo-9ffPg0Hl.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/lufthansa-logo-9ffPg0Hl.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/qatar-airways-logo-9b32UAae.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/qatar-airways-logo-9b32UAae.png"
             />
           </div>
-          <div class = "airlines__row airlines__row--first logos-second">
+          <div class="airlines__row airlines__row--first logos-second">
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/salam-air-logo-l6vfE_nq.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/salam-air-logo-l6vfE_nq.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/british-airways-logo-HpKu77tx.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/british-airways-logo-HpKu77tx.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/air-arabia-logo-wvmkftu1.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/air-arabia-logo-wvmkftu1.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/fly-emirates-logo-lTwhM8j-.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/fly-emirates-logo-lTwhM8j-.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/fly-dubai-logo-pRN9XMkI.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/fly-dubai-logo-pRN9XMkI.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/aseman-airline-logo-Anba0cqf.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/aseman-airline-logo-Anba0cqf.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/iran-air-logo-1t5AS5jQ.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/iran-air-logo-1t5AS5jQ.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/mahan-air-logo-IhKOWCpa.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/mahan-air-logo-IhKOWCpa.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/jazeera-airways-logo-YqTOwKAo.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/jazeera-airways-logo-YqTOwKAo.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/kuwait-airways-logo-Pt38vG1E.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/kuwait-airways-logo-Pt38vG1E.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/oman-air-logo-ThztW5Ki.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/oman-air-logo-ThztW5Ki.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/turkish-airline-logo-fvuNX9kC.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/turkish-airline-logo-fvuNX9kC.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/lufthansa-logo-9ffPg0Hl.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/lufthansa-logo-9ffPg0Hl.png"
             />
             <img
-                alt = ""
-                class = "airlines__image"
-                src = "./assets/qatar-airways-logo-9b32UAae.png"
+              alt=""
+              class="airlines__image"
+              src="./assets/qatar-airways-logo-9b32UAae.png"
             />
           </div>
         </div>
       </div>
     </section>
-    <section class = "section-introduction">
-      <div class = "container">
-        <div class = "introduction">
-          <div class = "introduction__text-box">
-            <h2 class = "heading-tertiary">
+    <section class="section-introduction">
+      <div class="container">
+        <div class="introduction">
+          <div class="introduction__text-box">
+            <h2 class="heading-tertiary">
               ۲۰ سال اعتماد شما سرمایه‌ای است که به آن می‌بالیم
             </h2>
-            <p class = "introduction__paragraph">
+            <p class="introduction__paragraph">
               آسمان باران با بیش از ۲۰ سال تجربه در ارائه خدمات حمل و نقل هوایی
               ( فریت بار ) و ارسال محصولات صادراتی در خدمت هم وطنان گرامی
               می‌باشد.
             </p>
           </div>
-          <div class = "introduction__counter">
-            <span class = "introduction__sign invisible">+</span>
-            <span class = "introduction__number"></span>
+          <div class="introduction__counter">
+            <span class="introduction__sign invisible">+</span>
+            <span class="introduction__number"></span>
           </div>
         </div>
       </div>
     </section>
-    <section class = "section-features">
-      <div class = "feature">
-        <div class = "feature__text-box">
-          <h2 class = "heading-secondary">کار را به متخصصین بسپارید</h2>
+    <section class="section-features">
+      <div class="feature">
+        <div class="feature__text-box">
+          <h2 class="heading-secondary">کار را به متخصصین بسپارید</h2>
         </div>
-        <ul class = "feature__cards">
-          <li class = "feature__wrapper">
-            <div class = "feature__card feature__card--first">
-              <svg class = "feature__icon">
-                <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-attach_money"></use>
+        <ul class="feature__cards">
+          <li class="feature__wrapper">
+            <div class="feature__card feature__card--first">
+              <svg class="feature__icon">
+                <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-attach_money"></use>
               </svg>
-              <h4 class = "heading__quaternary">صرفه‌جویی در هزینه</h4>
-              <p class = "feature__paragraph">
+              <h4 class="heading__quaternary">صرفه‌جویی در هزینه</h4>
+              <p class="feature__paragraph">
                 با آسمان باران بهترین خدمات را در ازای مناسب ترین نرخ دریافت
                 کنید
               </p>
             </div>
           </li>
-          <li class = "feature__wrapper">
-            <div class = "feature__card feature__card--second">
-              <svg class = "feature__icon">
-                <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-mark_chat_read"></use>
+          <li class="feature__wrapper">
+            <div class="feature__card feature__card--second">
+              <svg class="feature__icon">
+                <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-mark_chat_read"></use>
               </svg>
-              <h4 class = "heading__quaternary">مشاوره در زمینه ارسال بار</h4>
-              <p class = "feature__paragraph">
+              <h4 class="heading__quaternary">مشاوره در زمینه ارسال بار</h4>
+              <p class="feature__paragraph">
                 تیم پشتیبانی آسمان باران همواره آماده پاسخگویی به سوالات شما در
                 خصوص ارسال بار می‌باشد
               </p>
             </div>
           </li>
-          <li class = "feature__wrapper">
-            <div class = "feature__card feature__card--third">
-              <svg class = "feature__icon">
-                <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-av_timer"></use>
+          <li class="feature__wrapper">
+            <div class="feature__card feature__card--third">
+              <svg class="feature__icon">
+                <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-av_timer"></use>
               </svg>
-              <h4 class = "heading__quaternary">زمان اهمیت دارد</h4>
-              <p class = "feature__paragraph">
+              <h4 class="heading__quaternary">زمان اهمیت دارد</h4>
+              <p class="feature__paragraph">
                 زمان شما زمان ماست. در سریع‌ترین زمان ممکن بار شما به مقصد
                 دلخواه ارسال خواهد شد
               </p>
             </div>
           </li>
-          <li class = "feature__wrapper">
-            <div class = "feature__card feature__card--forth">
-              <svg class = "feature__icon">
-                <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-handyman"></use>
+          <li class="feature__wrapper">
+            <div class="feature__card feature__card--forth">
+              <svg class="feature__icon">
+                <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-handyman"></use>
               </svg>
-              <h4 class = "heading__quaternary">کادر مجرب و متخصص</h4>
-              <p class = "feature__paragraph">
+              <h4 class="heading__quaternary">کادر مجرب و متخصص</h4>
+              <p class="feature__paragraph">
                 با کادری آموزش دیده و باتجربه در امور بسته بندی در خدمت شما
                 خواهیم بود
               </p>
@@ -686,199 +668,326 @@
       </div>
     </section>
 
-    <section class = "section-info">
-      <div class = "info">
-        <ul class = "info__details">
-          <li class = "info__group">
-            <h3 class = "heading-tertiary">ارتباط با ما</h3>
+    <section class="section-info">
+      <div class="info">
+        <ul class="info__details">
+          <li class="info__group">
+            <h3 class="heading-tertiary">ارتباط با ما</h3>
           </li>
-          <li class = "info__group">
-            <svg class = "info__icon">
-              <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-call"></use>
+          <li class="info__group">
+            <svg class="info__icon">
+              <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-call"></use>
             </svg>
-            <div class = "info__phones">
-              <a class = "info__phone" href = "tel:+987136473050">۹۸-۷۱۳۶۴۷۳۰۵۰+</a>
-              <a class = "info__phone" href = "tel:+987136473221">۹۸-۷۱۳۶۴۷۳۲۲۱+</a>
-              <a class = "info__phone" href = "tel:+987136473222">۹۸-۷۱۳۶۴۷۳۲۲+</a>
+            <div class="info__phones">
+              <a class="info__phone" href="tel:+987136473050">۹۸-۷۱۳۶۴۷۳۰۵۰+</a>
+              <a class="info__phone" href="tel:+987136473221">۹۸-۷۱۳۶۴۷۳۲۲۱+</a>
+              <a class="info__phone" href="tel:+987136473222">۹۸-۷۱۳۶۴۷۳۲۲+</a>
             </div>
           </li>
-          <li class = "info__group">
-            <svg class = "info__icon">
-              <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-location"></use>
+          <li class="info__group">
+            <svg class="info__icon">
+              <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-location"></use>
             </svg>
-            <p class = "info__address">
+            <p class="info__address">
               شیراز - خیابان ملاصدرا - طبقه فوقانی بانک ملت - شرکت خدمات بار
               هوایی آسمان باران
             </p>
           </li>
-          <li class = "info__group">
-            <svg class = "info__icon">
-              <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-mail_outline"></use>
+          <li class="info__group">
+            <svg class="info__icon">
+              <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-mail_outline"></use>
             </svg>
-            <a class = "info__mail" href = "mailto:info@abcaircargo.ir"
-            >info@abcaircargo.ir</a
+            <a class="info__mail" href="mailto:info@abcaircargo.ir"
+              >info@abcaircargo.ir</a
             >
-            <a class = "info__mail" href = "mailto:abcaircargo@yahoo.com"
-            >abcaircargo@yahoo.com</a
+            <a class="info__mail" href="mailto:abcaircargo@yahoo.com"
+              >abcaircargo@yahoo.com</a
             >
           </li>
-          <li class = "info__group">
-            <picture class = "info__icon">
+          <li class="info__group">
+            <picture class="info__icon">
               <img
-                  alt = ""
-                  class = "info__map-icon"
-                  src = "./assets/google-maps-logo-UvS4BkKl.png"
+                alt=""
+                class="info__map-icon"
+                src="./assets/google-maps-logo-UvS4BkKl.png"
               />
             </picture>
             <a
-                class = "info__map-link"
-                href = "https://maps.app.goo.gl/WjvQG8BudMuP4h7r8"
-                target = "_blank"
-            >نمایش در Google Maps</a
+              class="info__map-link"
+              href="https://maps.app.goo.gl/WjvQG8BudMuP4h7r8"
+              target="_blank"
+              >نمایش در Google Maps</a
             >
           </li>
-          <li class = "info__group">
-            <picture class = "info__icon">
+          <li class="info__group">
+            <picture class="info__icon">
               <img
-                  alt = ""
-                  class = "info__map-icon"
-                  src = "./assets/neshan-logo-2bX28Lt6.png"
+                alt=""
+                class="info__map-icon"
+                src="./assets/neshan-logo-2bX28Lt6.png"
               />
             </picture>
             <a
-                class = "info__map-link"
-                href = "https://nshn.ir/37_bgOzPVF7AQV"
-                target = "_blank"
-            >نمایش در مسیریاب نشان</a
+              class="info__map-link"
+              href="https://nshn.ir/37_bgOzPVF7AQV"
+              target="_blank"
+              >نمایش در مسیریاب نشان</a
             >
           </li>
-          <li class = "info__group">
-            <picture class = "info__icon">
-              <img alt = "" class = "info__map-icon" src = "./assets/balad-logo-z50hYd-s.png" />
+          <li class="info__group">
+            <picture class="info__icon">
+              <img alt="" class="info__map-icon" src="./assets/balad-logo-z50hYd-s.png" />
             </picture>
             <a
-                class = "info__map-link"
-                href = "https://balad.ir/p/P4YUju0X3YrlRY"
-                target = "_blank"
-            >نمایش در مسیریاب بلد</a
+              class="info__map-link"
+              href="https://balad.ir/p/P4YUju0X3YrlRY"
+              target="_blank"
+              >نمایش در مسیریاب بلد</a
             >
           </li>
         </ul>
-        <div class = "info__map" id = "map">&nbsp;</div>
+        <div class="info__map" id="map">&nbsp;</div>
       </div>
     </section>
-    <footer class = "footer">
-      <div class = "footer__line"></div>
-      <div class = "footer__line"></div>
-      <div class = "footer__line"></div>
-      <div class = "container">
-        <div class = "footer__wrapper">
-          <div class = "footer__col">
-            <img alt = "" class = "footer__logo" src = "./assets/logo-s95GjLeP.png" />
-            <p class = "footer__desc">
+    <section class="section-contact">
+      <div class="contact">
+        <div class="contact__text-box">
+          <h2 class="heading-secondary">تماس با ما</h2>
+          <p class="contact__text">
+            سوالی دارید؟ همین حالا سوال خود را مطرح کنید. همکاران ما در اسرع وقت
+            پاسخگوی شما خواهند بود.
+            <br />
+            فراموش نکنید که برای دریافت اطلاعات کامل همواره می‌توانید با
+            شماره‌های تماس شرکت یا واتس‌اپ شرکت در ساعات کاری در تماس باشید.
+          </p>
+          <form action="" class="contact__form">
+            <div class="form__group">
+              <label class="form__label" for="name"
+                >نام و نام خانوادگی
+                <span class="form__error"
+                  >(این فیلد نمی‌تواند خالی باشد)
+                </span></label
+              >
+              <input
+                class="form__input"
+                id="name"
+                name="name"
+                placeholder="نام و نام خانوادگی شما"
+                type="text"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email"
+                >آدرس ایمیل<span class="form__error">
+                  (آدرس ایمیل وارد شده نامعتبر است)</span
+                ></label
+              >
+              <input
+                class="form__input"
+                id="email"
+                name="message"
+                placeholder="me@email.com"
+                type="text"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="number"
+                >شماره تماس<span class="form__error">
+                  (شماره تماس وارد شده نامعتبر است)</span
+                ></label
+              >
+              <input
+                class="form__input"
+                id="number"
+                maxlength="11"
+                min="0"
+                minlength="11"
+                name="number"
+                placeholder="09xxxxxxxx"
+                type="number"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label"
+                >ساعت تماس<span class="form__error">
+                  (لطفا یک بازه را انتخاب کنید)</span
+                ></label
+              >
+              <div class="form__radio-group">
+                <label class="form__radio-label" for="time-10">۱۳ - ۱۱</label>
+                <input
+                  class="form__radio"
+                  id="time-10"
+                  name="number"
+                  type="radio"
+                  value="10"
+                />
+                <label class="form__radio-label" for="time-13">۱۵ - ۱۳</label>
+                <input
+                  class="form__radio"
+                  id="time-13"
+                  name="number"
+                  type="radio"
+                  value="13"
+                />
+                <label class="form__radio-label" for="time-15">۱۷ - ۱۵</label>
+                <input
+                  class="form__radio"
+                  id="time-15"
+                  name="number"
+                  type="radio"
+                  value="15"
+                />
+              </div>
+            </div>
+            <div class="form__group form__group--message">
+              <label class="form__label" for="message"
+                >متن پیام<span class="form__error">
+                  (این فیلد نمی‌تواند خالی باشد و متن باید بیش از ۱۰ حرف
+                  باشد)</span
+                ></label
+              >
+              <textarea
+                class="form__textarea"
+                id="message"
+                name="message"
+                placeholder="متن پیام..."
+              ></textarea>
+            </div>
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LftrDopAAAAAKZYn89Hg6okFVb4rO83L5Eg__nH"
+            ></div>
+
+            <button
+              class="btn btn--main form__btn g-recaptcha"
+              data-action="submit"
+              data-callback="onSubmit"
+              data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            >
+              ارسال
+            </button>
+          </form>
+        </div>
+        <div
+          aria-label="مامور تحویل بار در حال تحویل بار به مشتری"
+          class="contact__image-box"
+          role="img"
+        ></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__line"></div>
+      <div class="footer__line"></div>
+      <div class="footer__line"></div>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__col">
+            <img alt="" class="footer__logo" src="./assets/logo-s95GjLeP.png" />
+            <p class="footer__desc">
               مجموعه آسمان باران با بیش از ۲۰ سال سابقه فعالیت در شهر شیراز
               مفتخر است که در زمینه بسته‌بندی تخصصی و ارسال بار به سرتاسر دنیا
               به هموطنان گرامی خدمت‌رسانی کند.
             </p>
-            <div class = "footer__socials">
-              <p class = "socials__desc">ما را در شبکه‌های اجتماعی دنبال کنید</p>
-              <ul class = "socials__list">
-                <li class = "social__item">
+            <div class="footer__socials">
+              <p class="socials__desc">ما را در شبکه‌های اجتماعی دنبال کنید</p>
+              <ul class="socials__list">
+                <li class="social__item">
                   <a
-                      class = "social__link"
-                      href = "https://www.instagram.com/Abcaircargo/"
-                      target = "_blank"
+                    class="social__link"
+                    href="https://www.instagram.com/Abcaircargo/"
+                    target="_blank"
                   >
-                    <svg class = "socials__icon">
-                      <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-instagram"></use>
+                    <svg class="socials__icon">
+                      <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class = "social__item">
+                <li class="social__item">
                   <a
-                      class = "social__link"
-                      href = "https://t.me/M_Akvnn"
-                      target = "_blank"
+                    class="social__link"
+                    href="https://t.me/M_Akvnn"
+                    target="_blank"
                   >
-                    <svg class = "socials__icon">
-                      <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-telegram"></use>
+                    <svg class="socials__icon">
+                      <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-telegram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class = "social__item">
+                <li class="social__item">
                   <a
-                      class = "social__link"
-                      href = "https://wa.link/orru11"
-                      target = "_blank"
+                    class="social__link"
+                    href="https://wa.link/orru11"
+                    target="_blank"
                   >
-                    <svg class = "socials__icon">
-                      <use xlink:href = "./assets/sprite-M6Il-ltd.svg#icon-whatsapp"></use>
+                    <svg class="socials__icon">
+                      <use xlink:href="./assets/sprite-gsSj8QpA.svg#icon-whatsapp"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <nav class = "footer__col">
-            <p class = "footer__heading">دسترسی سریع</p>
-            <ul class = "footer__list">
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#">گالری تصاویر</a>
+          <nav class="footer__col">
+            <p class="footer__heading">دسترسی سریع</p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">گالری تصاویر</a>
               </li>
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#">مقالات آموزشی</a>
+              <li class="footer__item">
+                <a class="footer__link" href="#">مقالات آموزشی</a>
               </li>
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#">مشاوره رایگان</a>
+              <li class="footer__item">
+                <a class="footer__link" href="#">مشاوره رایگان</a>
               </li>
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#">پیگیری محموله</a>
-              </li>
-            </ul>
-          </nav>
-          <nav class = "footer__col">
-            <p class = "footer__heading">شرکت</p>
-            <ul class = "footer__list">
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#">درباره آسمان باران</a>
-              </li>
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#">تماس با ما</a>
-              </li>
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#">شرایط و ضوابط</a>
+              <li class="footer__item">
+                <a class="footer__link" href="#">پیگیری محموله</a>
               </li>
             </ul>
           </nav>
-          <nav class = "footer__col">
-            <p class = "footer__heading">خدمات</p>
-            <ul class = "footer__list">
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#"
-                >ارسال هوایی لوازم منزل به خارج</a
+          <nav class="footer__col">
+            <p class="footer__heading">شرکت</p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">درباره آسمان باران</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">تماس با ما</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">شرایط و ضوابط</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__col">
+            <p class="footer__heading">خدمات</p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#"
+                  >ارسال هوایی لوازم منزل به خارج</a
                 >
               </li>
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#"
-                >ارسال هوایی اضافه بار مسافری</a
+              <li class="footer__item">
+                <a class="footer__link" href="#"
+                  >ارسال هوایی اضافه بار مسافری</a
                 >
               </li>
-              <li class = "footer__item">
-                <a class = "footer__link" href = "#">ارسال و جابجایی پت</a>
+              <li class="footer__item">
+                <a class="footer__link" href="#">ارسال و جابجایی پت</a>
               </li>
             </ul>
           </nav>
-          <div class = "footer__col footer__col--copyright">
-            <p class = "copyright">
+          <div class="footer__col footer__col--copyright">
+            <p class="copyright">
               ©2023 تمام حقوق مادی و معنوی این وبسایت، خدمات و محتوای مربوط به
               آن متعلق به شرکت خدمات بار هوایی آسمان باران می‌باشد.
             </p>
-            <p class = "developer">
-              طراحی و توسعه توسط <strong><a href = "">یحیی کمانه</a></strong>
+            <p class="developer">
+              طراحی و توسعه توسط <strong><a href="">یحیی کمانه</a></strong>
             </p>
           </div>
         </div>
       </div>
-    </footer>
+    </footer>
   </body>
 </html>
